@@ -58,9 +58,12 @@ def GerenciaMouse(button, state, x, y):
          if (state == GLUT_DOWN):
                   # Troca o tamanho do retângulo, que vai do centro da 
                   # janela até a posição onde o usuário clicou com o mouse
-                  escalax = 100.0/(view_w);
-                  xf = x*escalax;
-                  escalay= 100.0/(view_h);
+                  escalax = 100.0/(view_w);
+
+                  xf = x*escalax;
+
+                  escalay= 100.0/(view_h);
+
                   yf = 100-(y*escalay);
     glutPostRedisplay()
 

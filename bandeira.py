@@ -4,19 +4,19 @@ from OpenGL.GL import *
 def desenha():
 
 
-    glClearColor(1.0, 1.0, 1.0, 1.0)  # Define o fundo branco
-    glMatrixMode(GL_MODELVIEW)
+    #glClearColor(1.0, 1.0, 1.0, 1.0)  # Define o fundo branco
+    #glMatrixMode(GL_MODELVIEW)
     # fundo branco
     glBegin(GL_POLYGON);
     glColor3f(0, 0, 0);
-    # inferior esq
-    glVertex3f(-1, 1, 0.0);
     # superior esq
-    glVertex3f(-1, -1, 0.0);
+    glVertex3f(0, 0, 0.0);
+    # inferior esq
+    glVertex3f(45, 0, 0.0);
     # superior direita
-    glVertex3f(1, -1, 0.0);
+    glVertex3f(0, 45, 0.0);
     # inferior direita
-    glVertex3f(1, 1, 0.0);
+    glVertex3f(45, 45, 0.0);
     glEnd();
     glFlush()
 
