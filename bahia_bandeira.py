@@ -1,37 +1,37 @@
 from OpenGL.GLUT import *
 from OpenGL.GL import *
 
-def desenha():
 
+def desenha():
 
     #glClearColor(1.0, 1.0, 1.0, 1.0)  # Define o fundo branco
     #glMatrixMode(GL_MODELVIEW)
     # fundo branco
-    glBegin(GL_POLYGON);
-    glColor3f(0, 0, 0);
+    glBegin(GL_POLYGON)
+    glColor3f(0, 0, 0)
     # superior esq
-    glVertex3f(0, 0, 0.0);
+    glVertex3f(0, 0, 0.0)
     # inferior esq
-    glVertex3f(45, 0, 0.0);
+    glVertex3f(100, 0, 0.0)
     # superior direita
-    glVertex3f(0, 45, 0.0);
+    glVertex3f(0, 45, 0.0)
     # inferior direita
-    glVertex3f(45, 45, 0.0);
-    glEnd();
+    glVertex3f(45, 45, 0.0)
+    glEnd()
     glFlush()
 
     # Quadrado Azul
-    glBegin(GL_POLYGON);
-    glColor3f(0, 0, 255);
+    glBegin(GL_POLYGON)
+    glColor3f(0, 0, 255)
     # inferior esq
-    glVertex3f(-0.7, 0.0, 0.0);
+    glVertex3f(-0.7, 0.0, 0.0)
     # superior esq
-    glVertex3f(-0.7, 0.65, 0.0);
+    glVertex3f(-0.7, 0.65, 0.0)
     # superior direita
-    glVertex3f(-.3, 0.65, 0.0);
+    glVertex3f(-.3, 0.65, 0.0)
     # inferior direita
-    glVertex3f(-.3, 0, 0.0);
-    glEnd();
+    glVertex3f(-.3, 0, 0.0)
+    glEnd()
     glFlush()
 
     # Desenha Triangulo branco
@@ -47,60 +47,60 @@ def desenha():
     glFlush()
 
     # Linha branca superior
-    glBegin(GL_POLYGON);
-    glColor3f(255, 255, 255);
+    glBegin(GL_POLYGON)
+    glColor3f(255, 255, 255)
     # superior esq
-    glVertex3f(-.3, .65, 0.0);
+    glVertex3f(-.3, .65, 0.0)
     # superior dir
-    glVertex3f(.7, .65, 0.0);
+    glVertex3f(.7, .65, 0.0)
     # inferior dir
-    glVertex3f(.7, .35, 0.0);
+    glVertex3f(.7, .35, 0.0)
     # inferior esq
-    glVertex3f(-.3, .35, 0.0);
+    glVertex3f(-.3, .35, 0.0)
 
-    glEnd();
+    glEnd()
     glFlush()
 
     # Linha vermelha superior
-    glBegin(GL_POLYGON);
-    glColor3f(255, 0, 0);
+    glBegin(GL_POLYGON)
+    glColor3f(255, 0, 0)
     # inferior esq
-    glVertex3f(-.3, 0, 0.0);
+    glVertex3f(-.3, 0, 0.0)
     # superior esq
-    glVertex3f(-.3, .35, 0.0);
+    glVertex3f(-.3, .35, 0.0)
     # superior direita
-    glVertex3f(.7, 0.35, 0.0);
+    glVertex3f(.7, 0.35, 0.0)
     # inferior direita
-    glVertex3f(.7, 0, 0.0);
-    glEnd();
+    glVertex3f(.7, 0, 0.0)
+    glEnd()
     glFlush()
 
     #Linha vermelha inferior
-    glBegin(GL_POLYGON);
-    glColor3f(255, 0, 0);
+    glBegin(GL_POLYGON)
+    glColor3f(255, 0, 0)
     # superior dir
-    glVertex3f(.7, -.35, 0.0);
+    glVertex3f(.7, -.35, 0.0)
     # inferior dir
-    glVertex3f(.7, -.7, 0.0);
+    glVertex3f(.7, -.7, 0.0)
     # superior esq
-    glVertex3f(-.7, -0.7, 0.0);
+    glVertex3f(-.7, -0.7, 0.0)
     # inferior esq
-    glVertex3f(-.7, -.35, 0.0);
-    glEnd();
+    glVertex3f(-.7, -.35, 0.0)
+    glEnd()
     glFlush()
 
     # Linha branca inferior
-    glBegin(GL_POLYGON);
-    glColor3f(255, 255, 255);
+    glBegin(GL_POLYGON)
+    glColor3f(255, 255, 255)
     # superior dir
-    glVertex3f(.7, 0, 0.0);
+    glVertex3f(.7, 0, 0.0)
     # superior esq
-    glVertex3f(-.7, 0, 0.0);
+    glVertex3f(-.7, 0, 0.0)
     # inferior esq
-    glVertex3f(-.7, -.35, 0.0);
+    glVertex3f(-.7, -.35, 0.0)
     # inferior dir
-    glVertex3f(.7, -.35, 0.0);
-    glEnd();
+    glVertex3f(.7, -.35, 0.0)
+    glEnd()
     glFlush()
 
 

@@ -13,8 +13,8 @@ y1 = 0
 #Tamanho do incremento nas direções x e y
 #(número de pixels para se mover a cada
 #intervalo de tempo)
-xstep = 1.5
-ystep = 1.5
+xstep = 1
+ystep = 1
 def desenha():
     global windowWidth, windowHeight, x1, y1, xstep, ystep
     glMatrixMode(GL_MODELVIEW)

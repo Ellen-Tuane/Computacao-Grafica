@@ -118,7 +118,7 @@ def AlteraTamanhoJanela(w, h):
     # Inicializa o sistema de coordenadas
     glMatrixMode(GL_PROJECTION)
     glLoadIdentity()
-    gluOrtho2D(0, 100, 0, 100)
+    gluOrtho2D(0, view_w, view_h, 0)
 
 
 # Função callback chamada para gerenciar eventos de teclado
