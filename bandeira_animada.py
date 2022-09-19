@@ -13,15 +13,15 @@ y1 = 0
 #Tamanho do incremento nas direções x e y
 #(número de pixels para se mover a cada
 #intervalo de tempo)
-xstep = 1
-ystep = 1
+xstep = 1.5
+ystep = 1.5
 def desenha():
     global windowWidth, windowHeight, x1, y1, xstep, ystep
     glMatrixMode(GL_MODELVIEW)
     glLoadIdentity()
     glClear(GL_COLOR_BUFFER_BIT)
 
-    glColor3f(1, 0, 1)  # Retângulo Branco
+    glColor3f(1, 1, 1)  # Retângulo Branco
     glBegin(GL_QUADS)
     glVertex2f(x1, y1)
     glVertex2f(x1, 50 + y1)
@@ -55,6 +55,23 @@ def desenha():
     glVertex2f(22 + x1, 30 + y1)
     glEnd()
 
+    # faixa Vermelha 1
+    glColor3f(1, 0, 0)
+    glBegin(GL_QUADS)
+    glVertex2f(x1, y1)
+    glVertex2f(100 + x1, y1)
+    glVertex2f(100 + x1, 12.5 + y1)
+    glVertex2f(x1, 12.5 + y1)
+    glEnd()
+
+    # faixa Vermelha 1
+    glColor3f(1, 0, 0)
+    glBegin(GL_QUADS)
+    glVertex2f(x1 + 25, y1 + 25)
+    glVertex2f(x1 + 100, y1 + 25)
+    glVertex2f(x1 + 100, y1 + 37.5)
+    glVertex2f(x1 + 25, y1 + 37.5)
+    glEnd()
 
 
     glutSwapBuffers()
@@ -62,13 +79,13 @@ def desenha():
 
 def Timer(value):
     global windowWidth, windowHeight, x1, y1, xstep, ystep
-    if (x1 > windowWidth - 70 or x1 < 0): xstep = -xstep
+    if (x1 > windowWidth - 100 or x1 < 0): xstep = -xstep
 
-    if (y1 > windowHeight - 45 or y1 < 0): ystep = -ystep
+    if (y1 > windowHeight - 50 or y1 < 0): ystep = -ystep
 
-    if (x1 > windowWidth - 70): x1 = windowWidth - 70 - 1
+    if (x1 > windowWidth - 100): x1 = windowWidth - 100 - 1
 
-    if (y1 > windowHeight - 45): y1 = windowHeight - 45 - 1
+    if (y1 > windowHeight - 50): y1 = windowHeight - 50 - 1
 
     x1 += xstep
     y1 += ystep
