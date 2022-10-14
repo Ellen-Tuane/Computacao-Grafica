@@ -103,7 +103,6 @@ def desenha():
     glEnd()
     glFlush()
 
-
 def render():
     global shaderProgram
     global VAO
@@ -113,6 +112,7 @@ def render():
     glDrawArrays(GL_TRIANGLES, 0, 3)
     glUseProgram(0)
     glutSwapBuffers()
+
 
 
 #// Programa Principal
